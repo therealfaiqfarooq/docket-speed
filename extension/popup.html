@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Docket Speed</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="p-header">
+    <img class="p-logo" src="icons/icon32.png" width="20" height="20" alt="" />
+    <span class="p-mark">Docket Speed</span>
+    <span class="p-tag">RSVP reader</span>
+  </header>
+
+  <main class="p-body">
+    <button id="start-page" class="p-btn p-btn-primary" type="button">Read whole page</button>
+    <p class="p-hint">
+      Or select a passage on a CanLII page, right-click it, and choose
+      <em>Read selection with Docket Speed</em>.
+    </p>
+
+    <div id="p-status" class="p-status" role="status" aria-live="polite"></div>
+
+
+    <section class="p-card">
+    <div class="p-field">
+      <label for="p-wpm">Default speed</label>
+      <div class="p-row">
+        <input type="range" id="p-wpm" min="100" max="1000" step="10" value="400" />
+        <span class="p-mono" id="p-wpm-val">400</span>
+        <span class="p-unit">wpm</span>
+      </div>
+    </div>
+
+    <div class="p-field">
+      <label for="p-font">Word size</label>
+      <div class="p-row">
+        <input type="range" id="p-font" min="28" max="80" step="2" value="46" />
+        <span class="p-mono" id="p-font-val">46</span>
+        <span class="p-unit">px</span>
+      </div>
+    </div>
+
+    <div class="p-field">
+      <label for="p-theme">Reader theme</label>
+      <select id="p-theme">
+        <option value="paper">Light</option>
+        <option value="ink">Dark</option>
+      </select>
+    </div>
+
+    <div class="p-field p-field-inline">
+      <label for="p-pause">Pause longer at punctuation</label>
+      <input type="checkbox" id="p-pause" class="p-switch" role="switch" checked />
+    </div>
+    </section>
+  </main>
+
+  <footer class="p-footer">
+    Runs entirely in your browser. No case text is stored or sent anywhere.
+    Not affiliated with or endorsed by CanLII.
+  </footer>
+
+  <script src="engine.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

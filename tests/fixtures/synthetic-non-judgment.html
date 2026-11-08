@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Search results | CanLII</title>
+<!-- SYNTHETIC FIXTURE: modelled on CanLII's layout, fictional content, not copied from canlii.org -->
+<style>
+  body { font-family: Georgia, serif; margin: 0; background: #fafafa; color: #222; }
+  .site-header { background: #2b3e50; color: #fff; padding: 12px 24px; }
+  .site-header a { color: #fff; }
+  .navbar ul { list-style: none; display: flex; gap: 16px; margin: 0; padding: 0; }
+  #mainContent { max-width: 900px; margin: 0 auto; padding: 24px; background: #fff; }
+  .documentMeta .row { display: flex; gap: 12px; font-size: 14px; }
+  .document-tools { margin: 12px 0; font-size: 13px; }
+  .documentcontent p { line-height: 1.6; }
+  .sidebar { max-width: 900px; margin: 0 auto; padding: 12px 24px; font-size: 14px; }
+  .site-footer { background: #eee; padding: 16px 24px; font-size: 12px; }
+  /* Page-wide rules that a non-isolated overlay would inherit: */
+  button { text-transform: uppercase; margin: 20px; font-size: 30px; }
+  div { line-height: 3; }
+  * { letter-spacing: 0.05em; }
+</style>
+</head>
+<body>
+
+  <div id="onetrust-consent-sdk"><div class="onetrust-pc-dark-filter"></div>
+    <div id="onetrust-banner-sdk" class="otFlat" role="alertdialog" aria-describedby="onetrust-policy-text" style="position:fixed;bottom:0;left:0;right:0;background:#fff;padding:24px;z-index:999">
+      <div class="ot-sdk-container"><div class="ot-sdk-row"><div id="onetrust-policy">
+        <h2 id="onetrust-policy-title">Your privacy</h2>
+        <p id="onetrust-policy-text">We use cookies and similar technologies to improve your experience on our website, to analyse traffic and to personalise content. By clicking Accept all cookies you agree to the storing of cookies on your device. You can manage your cookie preferences at any time by visiting the privacy centre. Strictly necessary cookies are always active because the website cannot function properly without them. [1] Cookie policy section one. [2] Cookie policy section two. [3] Cookie policy section three.</p>
+        <p>We use cookies and similar technologies to improve your experience on our website, to analyse traffic and to personalise content. By clicking Accept all cookies you agree to the storing of cookies on your device. You can manage your cookie preferences at any time by visiting the privacy centre. Strictly necessary cookies are always active because the website cannot function properly without them.</p>
+      </div>
+      <div id="onetrust-button-group"><button id="onetrust-accept-btn-handler">Accept all cookies</button><button id="onetrust-reject-all-handler">Reject all</button></div>
+      </div></div></div></div>
+  
+  <a class="skip-link" href="#mainContent">Skip to content</a>
+  <header id="header" class="site-header">
+    <div class="logo">Legal Info Demo</div>
+    <nav class="navbar" aria-label="Main">
+      <ul><li><a href="/en/">Home</a></li><li><a href="/en/ca/">Canada (Federal)</a></li>
+      <li><a href="/en/on/">Ontario</a></li><li><a href="/en/qc/">Québec</a></li><li><a href="/en/info/">About</a></li></ul>
+    </nav>
+    <form class="search-form" role="search"><input type="text" name="q" placeholder="Search"><button>Search</button></form>
+  </header>
+  <div id="breadcrumbs" class="breadcrumb"><a href="/en/">Legal Info Demo</a> &gt; <a href="/en/ca/">Canada</a> &gt; <span>Decision</span></div>
+<div id="mainContent" class="container">
+
+<h1>Search results</h1>
+<p class="summary">12 results</p>
+<ul class="results"><li class="result"><a href="#">Example v. Sample 1, 2090 SCC 1</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 2, 2091 SCC 2</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 3, 2092 SCC 3</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 4, 2093 SCC 4</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 5, 2094 SCC 5</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 6, 2095 SCC 6</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 7, 2096 SCC 7</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 8, 2097 SCC 8</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 9, 2098 SCC 9</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 10, 2090 SCC 10</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 11, 2091 SCC 11</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li><li class="result"><a href="#">Example v. Sample 12, 2092 SCC 12</a> <span class="snippet"><a href="#">administrative law</a>, <a href="#">judicial review</a></span></li></ul>
+<div class="pagination"><a href="#">1</a> <a href="#">2</a> <a href="#">Next</a></div>
+</div>
+
+  <footer id="footer" class="site-footer">
+    <p>Terms of use · Privacy policy · Contact us · Help · Site map · Accessibility statement</p>
+    <p>This demonstration site is entirely fictional and exists only for automated testing of the reader.</p>
+  </footer>
+  
+<script>
+  // Page-side key listener, used by tests to prove the reader does not leak keys.
+  window.__pageKeys = [];
+  document.addEventListener("keydown", (e) => window.__pageKeys.push(e.key));
+</script>
+</body>
+</html>

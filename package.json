@@ -1,0 +1,19 @@
+{
+  "name": "docket-speed",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dev tooling for the Docket Speed Chrome extension (not part of the upload).",
+  "scripts": {
+    "test": "npm run test:unit && npm run test:e2e",
+    "test:unit": "node --test \"tests/unit/*.test.cjs\"",
+    "test:e2e": "node tests/e2e/run-e2e.mjs",
+    "fixtures": "node scripts/make-fixtures.mjs",
+    "privacy": "node scripts/build-privacy-html.mjs",
+    "package": "bash scripts/package.sh",
+    "screenshots": "node scripts/screenshots.mjs",
+    "icons": "python3 scripts/make_icons.py"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

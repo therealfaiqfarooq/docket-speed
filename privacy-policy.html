@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Docket Speed privacy policy</title>
+<style>
+  :root { color-scheme: light dark; --fg: #1f2328; --muted: #4a5160; --bg: #fbfaf7; --accent: #7a2331; --code: #efebe2; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #f1ede4; --muted: #c9c4b8; --bg: #161b22; --accent: #e0707f; --code: #232b36; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Georgia, "Times New Roman", serif; }
+  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 1.9em; line-height: 1.2; margin: 0 0 0.6em; }
+  h2 { font-size: 1.25em; margin: 1.8em 0 0.4em; color: var(--accent); }
+  code { background: var(--code); padding: 0.1em 0.35em; border-radius: 4px; font-size: 0.88em; }
+  a { color: var(--accent); }
+  ul { padding-left: 1.3em; }
+  li { margin: 0.3em 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>Docket Speed privacy policy</h1>
+<p><strong>Effective date:</strong> November 4, 2026</p>
+<p><strong>Applies to:</strong> the Docket Speed Chrome extension, version 1.0.0 and later</p>
+<p>Docket Speed is a speed-reading tool for pages on canlii.org. This policy explains what the extension does with information. The short version: it works entirely inside your browser, it does not collect anything about you, and it never sends anything anywhere.</p>
+<h2>What runs, and where</h2>
+<p>Docket Speed does nothing until you start it, either by clicking its toolbar button and choosing "Read whole page", or by selecting text on a canlii.org page and choosing "Read selection with Docket Speed" from the right-click menu. At that moment Chrome gives the extension temporary access to that one tab, and the extension:</p>
+<ul>
+  <li>reads the text of the page you are viewing (or of your selection) from the page itself,</li>
+  <li>shows that text back to you, one word at a time, in a reading panel drawn over the same page.</li>
+</ul>
+<p>All of this happens on your device, inside your browser. The text is held in memory only while the reading panel is open, and is discarded when you close it or leave the page.</p>
+<h2>What is stored</h2>
+<p>Docket Speed stores only the following, using Chrome's built-in extension storage:</p>
+<ul>
+  <li><strong>Your preferences</strong>, in <code>chrome.storage.sync</code>: reading speed (words per minute), theme (dark or light), word size, and whether to pause longer at punctuation. If you have turned on Chrome sync, Chrome syncs these preferences between your own devices through your Google account, as it does for other extension settings. Docket Speed has no access to your Google account and receives no copy of this data.</li>
+  <li><strong>Your reading position, for the current browser session only</strong>, in <code>chrome.storage.session</code>: two numbers (the word you stopped at and the total word count), filed under a short code computed from the page address. No case text and no web address is stored. Chrome keeps session storage in memory and clears it when you close the browser.</li>
+</ul>
+<p>No case text, page content, browsing history, or personal information is ever stored.</p>
+<h2>What is not collected or shared</h2>
+<ul>
+  <li>Docket Speed makes <strong>no network requests</strong> of any kind. It does not contact any server, including CanLII's, its developer's, or any third party's.</li>
+  <li>It has <strong>no analytics, tracking, advertising, or crash reporting</strong>.</li>
+  <li>It does <strong>not sell, rent, transfer, or share</strong> any data with anyone, because it has no data to share.</li>
+  <li>It does not use any data to determine creditworthiness or for lending purposes.</li>
+</ul>
+<p>The use of information by Docket Speed complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/">Chrome Web Store User Data Policy</a>, including the Limited Use requirements.</p>
+<h2>Permissions</h2>
+<ul>
+  <li><strong>activeTab</strong>: temporary access to the current tab, granted only when you click the toolbar button or the right-click menu item.</li>
+  <li><strong>scripting</strong>: lets the extension start its built-in reader in that tab.</li>
+  <li><strong>contextMenus</strong>: adds the "Read selection with Docket Speed" item to the right-click menu on canlii.org.</li>
+  <li><strong>storage</strong>: saves the preferences and session reading position described above.</li>
+</ul>
+<p>Docket Speed requests no permission to read or change data on any website in the background.</p>
+<h2>Removing your data</h2>
+<p>Uninstalling Docket Speed from <code>chrome://extensions</code> removes its stored preferences and session data from your browser. Session data is also cleared every time you close Chrome.</p>
+<h2>Relationship to CanLII</h2>
+<p>Docket Speed is an independent tool. It is not affiliated with, endorsed by, or sponsored by CanLII (the Canadian Legal Information Institute). It only displays pages you are already viewing in your own browser and does not copy, collect, or redistribute CanLII content.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the new version will be posted at this address with a new effective date. Material changes will also be noted in the extension's store listing.</p>
+<h2>Contact</h2>
+<p>Questions about this policy: <strong><a href="mailto:faiqfarooq307@gmail.com">faiqfarooq307@gmail.com</a></strong></p>
+</main>
+</body>
+</html>
